@@ -20,16 +20,22 @@
  /* center significa que a imagem de fundo será centralizada tanto horizontalmente quanto verticalmente 
  dentro do elemento. */
 
+ .slider-wrapper{
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+ }
 
 .card-list .card-item{
     color: antiquewhite;
-    width: 400px;
+    user-select: none;
     padding: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+    backdrop-filter: blur(30px);
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -40,3 +46,43 @@
     border-radius: 50%;
 }
 
+.card-list .card-item .user-profession{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #e3e3e3;
+    margin: 14px 0 40px;
+}
+
+.card-list .card-item .message-button{
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #030728;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid transparent;
+}
+
+.card-list .card-item .message-button:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffff;
+    color: #fff;
+
+
+}
+
+.slider-wrapper .swipper-pagination-bullet{
+    background: #fff;
+    height: 15px;
+    width: 15px;
+}
+
+.slider-wrapper .swiper-slide-button{
+    color: #fff;
+    margin-top: -50px;
+}
+
+.slider-wrapper .swiper-slide-button{
+    color: #4658ff;
+}
